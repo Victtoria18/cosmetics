@@ -1,0 +1,283 @@
+.header {
+    background-color: PowderBlue;
+    height: 250px;
+    font-size: 0.9em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 850px;
+}
+
+.main {
+  background-color: powderblue;
+}
+
+.logo {
+    width: 900px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo h1, .logo h1 a, .logo h1 a:hover {
+    font: normal 250% "center-gothic", cursive;
+    font-size: 50px;
+    color: MediumOrchid;
+    margin: 0 0 0 9px;
+    text-decoration: none;
+    text-align: center;
+}
+.logo h2 {
+    font-size: 20px;
+    margin: 4px 0 0 9px;
+    text-align: center;
+    font-family: cursive;
+    color: DarkRed;
+}
+
+.menu {
+    width: 900px;
+    height: 50px;
+}
+.menu li {
+    float: left;
+    list-style: none;
+    padding:0 0 0 9px; 
+    margin: 1px 2px 0 0;
+}
+
+.menu li a {
+  font: normal 100% 'trebuchet ms', sans-serif;
+  display: block;
+  height: 25px;
+  padding: 5px 30px 5px 15px;
+  color: MediumVioletRed; 
+  text-decoration: none;
+  outline: thick double #32a1ce;
+}
+
+.menu li a:hover{
+  transform: scale(1.5);
+  outline: thick double #32a1ce;
+}
+.menu ul li.active a{
+  background-color: Thistle;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.site_content {
+  width:1400px;
+  overflow:hidden;
+  margin: 23px 3px 10px 0;
+  background-color: White;
+} 
+
+.sidebar {
+  float: right;
+  width: 250px;
+}
+.block {
+   padding:3%;
+   margin:11px 3px 20px 0;
+   border:thick double #32a1ce;
+   border-radius:5px;
+   background-color: Lavender;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 10px;
+  background-color: Honeydew; 
+  cursor: pointer; 
+  border: none;
+  width: 30%;
+}
+
+.sidebar h2 {
+  font: normal 150% 'centry gothic', cursive;
+  color:MediumVioletRed;
+}
+
+input [type="search"], [type="text"], [type="password"]{
+  border: none;
+  width:55%;
+  padding:10px;
+}
+
+.passreg {
+  font-size: 0.9em;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.footer, .site_content {
+  font: normal 250% "center-gothic", cursive;
+  text-align: center;
+  background-color: PowderBlue;
+  color: MediumOrchid;
+  padding: 26px 0 6px 0;
+  font-size: 1.3em;
+  min-width: 850px;
+}
+
+
+
+.posts h2 { 
+  text-decoration: none; 
+  font: normal 140% 'centry-gothic', cursive; 
+  text-align: center;
+  color: SteelBlue;
+}
+
+p { 
+  padding: 3px 5px 25px 3px; 
+  line-height: 1.9em; 
+}
+          
+.posts_content { 
+  color: Black; 
+  font:normal 100% 'trebuchet ms',  monospace;
+}
+
+ .other_cosmetics {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   overflow: hidden;
+   min-width: 600px;
+   max-width: 900px;
+   width: calc(100% - 100px);
+   height: 400px;
+ }
+
+.other_cosmetic {
+  position: relative;
+  overflow: hidden;
+  min-width: 150px;
+  margin: 10px;
+  background: var(--cosmeticPhoto, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.other_cosmetic:nth-child(1) {
+  --defaultBackground: #ed5565;
+}
+
+.other_cosmetic .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.other_cosmetic .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+
+.other_cosmetic .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.other_cosmetic .main {
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.other_cosmetic.active {
+  flex-grow: 10000;
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+
+.other_cosmetic.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.other_cosmetic.active .info > div {
+  left: 0px;
+  opacity: 1;
+}
+
+.other_cosmetic:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+
+.other_cosmetic:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.other_cosmetic:not(.active) .info > div {
+  left: 20px;
+  opacity: 0;
+}
+
+.other_cosmetic .main a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.other_cosmetic .main:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.other_posts_content {
+  color: DimGray;
+}
+
+.other_posts_content .read_more {
+  display: inline-block;
+  font: normal 140% 'centry-gothic', arial;
+  font-weight: bold; outline: none;
+  text-decoration: none;
+  color: Violet;
+  background-color: #eee;
+  padding: 0.6rem 1.5rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.other_posts_content .read_more:hover { 
+  background-color: #fff;
+  box-shadow: 0 0 2rem Orgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.other_posts_content .other_posts_more {
+  display: block;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  transition: all 0.3s ease-out;
+}
+
+.other_posts_content .other_posts_more--open {
+  display: block;
+  opacity: 1;
+  height: fit-content;
+  max-height: 500px;
+  transition: all 0.5s ease-in;
+} 
